@@ -213,9 +213,10 @@ I dag har de fleste datamaskiner flere prosessorkjerner, som lar dem utføre opp
 
 Amdahl's Lov gir en beregning for hvordan mye ytelsen kan forbedres i et parallelt system. Loven sier at den maksimale ytelsesøkningen er begrenset av andelen av programmet som kan kjøres parallelt.
 
-\[
+$$
 \text{Speedup} = \frac{1}{(1 - P) + \frac{P}{N}}
-\]
+$$
+
 
 - **P:** Andelen av programmet som kan kjøres parallelt.
 - **N:** Antall prosessorkjerner.
@@ -236,16 +237,15 @@ Anta at 70% av et program kan kjøres parallelt. Hvor mye raskere blir programme
 
 **Løsning:**  
 Bruk formelen:
-\[
+
+$$
 \text{Speedup} = \frac{1}{(1 - 0.7) + \frac{0.7}{4}} = \frac{1}{0.3 + 0.175} = \frac{1}{0.475} \approx 2.1
-\]
+$$
+
 
 Med 4 kjerner blir programmet omtrent 2,1 ganger raskere.
 
 --- 
-Her er et forslag til Kapittel 2 skrevet i Markdown. Kapitlet dekker temaer fra instruksjonssett og RISC-V-arkitektur i henhold til læringsmålene.
-
----
 
 # Kapittel 2: Instruksjoner og RISC-V Instruksjonssett
 
@@ -564,9 +564,6 @@ Anta at vi har en liste med tall `[2, 4, 6, 8]`, og vi ønsker å legge til 1 ti
 **Resultat:** `1 10000010 11100000000000000000000`
 
 ---
-Her er en detaljert versjon av Kapittel 4 i Markdown, som dekker temaer rundt prosessorarkitektur, enkeltsykliske og flersykliske prosessorer, samt pipelining.
-
----
 
 # Kapittel 4: Prosessorarkitektur og Mikroarkitektur
 
@@ -728,9 +725,6 @@ Anta at vi
 beq x1, x2, label
 ```
 For å unngå forsinkelser ved kontrollfare, kan vi bruke forgreningprediksjon til å gjette om hoppet vil tas eller ikke, og begynne å hente neste instruksjon basert på prediksjonen.
-
----
-Her er Kapittel 5 skrevet i Markdown, som dekker minnehierarki, hurtigbuffer (cache) og relaterte ytelsesaspekter.
 
 ---
 
@@ -1004,9 +998,6 @@ Siden `add` er avhengig av `x1`, som ennå ikke er ferdig lastet, må pipelinen 
 
 ---
 
-Her er en detaljert oppsummering av innholdet for Appendix A, som dekker grunnleggende digital logikk og aritmetikk, sentrale emner for forståelse av maskinvarekomponenter.
-
----
 
 # Appendix A: Grunnleggende Digital Logikk og Aritmetikk
 
@@ -1147,6 +1138,4 @@ Anta at vi har en 4-bit ALU og ønsker å beregne `5 - 3`:
    0101 + 1101 = 0010 \quad (\text{som er 2 i desimal})
    \]
 
----
 
-## Oppsummering
