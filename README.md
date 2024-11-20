@@ -451,7 +451,7 @@ Konvertering av desimaltall til binærtall kan gjøres ved å dele tallet på 2 
     - 3 / 2 = 1, rest 1
     - 1 / 2 = 0, rest 1
 
-Resultatet, lest fra bunnen og opp, er \(1101_2\).
+Resultatet, lest fra bunnen og opp, er \(1101\).
 
 ---
 
